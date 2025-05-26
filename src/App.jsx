@@ -11,7 +11,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/submit", form);
+      await axios.post("https://backend-task-34.onrender.com/submit", form);
       alert("Form submitted successfully!");
       setForm({ name: "", email: "", number: "" });
     } catch (error) {
